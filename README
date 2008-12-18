@@ -1,0 +1,14 @@
+Bugzilla Schema Translator
+
+<harlan.crystal@gmail.com>
+December 18, 2008
+
+
+
+Newer versions of the Bugzilla bugtracking software have upgrade options.  If you have an extremely old installation, there is no clear installation path.  This software attempts to convert the contents of a bugzilla 2.14.2 schema to a bugzilla 3.2 schema.  It makes no attempt to do conversions between any other pairs of versions.  It would not be difficult to add functionality to convert between other versions, but the code was not designed with that need in mind.
+
+Requirements:
+ * Ruby + ActiveRecord.
+ * A login to an existing 2.14.2 schema.
+ * A login to an existing 3.2 schema which you don't mind being truncated.
+
