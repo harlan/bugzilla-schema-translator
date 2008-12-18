@@ -1,0 +1,13 @@
+bugzilla_2_14_2:
+  adapter:  mysql
+  host:     localhost
+  username: root
+  password:
+  database: legacy_bugzilla_db
+
+bugzilla_3_2:
+  adapter:  mysql
+  host:     localhost
+  username: root
+  password:
+  database: spankin_new_bugzilla_db
