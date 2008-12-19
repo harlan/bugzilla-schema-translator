@@ -7,7 +7,8 @@ require 'activerecord'
 require 'models_3_2/model32'
 require 'models_2_14_2/model2142'
 
-require 'models_2_14_2/bug2142'
+require 'models_2_14_2/bug'
+require 'models_2_14_2/attachment'
 
 # parse db config file
 database_settings = YAML::load(ERB.new(IO.read("database.yml")).result)
@@ -22,4 +23,5 @@ line = gets.strip.upcase
 exit if line.empty? || line[0,1] != 'Y'
 
 
-puts "We have this many bugs: #{Bugzilla2142::Bug2142.count}"
+puts "We have this many bugs: #{Bugzilla2142::Bug.count}"
+puts "We have this many bugs: #{Bugzilla2142::Attachment.count}"
